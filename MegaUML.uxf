@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>40</x>
-      <y>110</y>
+      <x>0</x>
+      <y>140</y>
       <w>190</w>
       <h>90</h>
     </coordinates>
@@ -20,8 +20,8 @@ Constructors</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>380</x>
-      <y>100</y>
+      <x>340</x>
+      <y>130</y>
       <w>310</w>
       <h>170</h>
     </coordinates>
@@ -43,8 +43,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>910</x>
-      <y>0</y>
+      <x>870</x>
+      <y>30</y>
       <w>350</w>
       <h>230</h>
     </coordinates>
@@ -54,7 +54,7 @@ bg=green</panel_attributes>
 - nodePointer : IntNode *
 
 --
-+ getData() : int
++ getNodeData() : int
 + getNodePointer() : IntNode *
 + setNodeData(int) : void
 + setNodePointer(IntNode *) : void
@@ -69,8 +69,8 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>50</x>
-      <y>20</y>
+      <x>10</x>
+      <y>50</y>
       <w>120</w>
       <h>50</h>
     </coordinates>
