@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>140</y>
+      <y>60</y>
       <w>190</w>
       <h>90</h>
     </coordinates>
@@ -20,8 +20,8 @@ Constructors</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>220</x>
-      <y>70</y>
+      <x>0</x>
+      <y>150</y>
       <w>310</w>
       <h>170</h>
     </coordinates>
@@ -37,14 +37,14 @@ Constructors</panel_attributes>
 + getExecutionTimeInMicroseconds() : long
 +Timer() : constructor
 
-bg=green</panel_attributes>
+bg=#001CFF</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>540</x>
-      <y>20</y>
+      <x>720</x>
+      <y>0</y>
       <w>350</w>
       <h>220</h>
     </coordinates>
@@ -63,16 +63,16 @@ bg=green</panel_attributes>
 + IntNode(int) : constructor
 + Intnode (int, IntNode *) : constructor
 
-bg=orange</panel_attributes>
+bg=#12FF00</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>10</x>
-      <y>50</y>
-      <w>120</w>
-      <h>50</h>
+      <x>0</x>
+      <y>0</y>
+      <w>190</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>Created by 
 Jonah Tucker
@@ -82,8 +82,8 @@ bg=cyan</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>220</x>
-      <y>260</y>
+      <x>270</x>
+      <y>0</y>
       <w>310</w>
       <h>150</h>
     </coordinates>
@@ -97,8 +97,82 @@ bg=cyan</panel_attributes>
 + getFromIndex(int) : int
 + setAtIndex(int index, int value) : void
 
-bg=gray
+bg=#179B0D
 </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>220</y>
+      <w>450</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>Node&lt;Type&gt;
+--
+- nodeData : Type
+- nodePointer: Node&lt;Type&gt; *
+--
+Construcutors
++ Node&lt;Type&gt;() : constructor
++ Node&lt;Type&gt;(Type value) : constructor
++ Node&lt;Type&gt;(Type value, Node&lt;Type&gt; * next) : constructor
+
+Accessors
+
++ getNodeData() : Type
++ getNodePointer() : Node&lt;Type&gt;()
++ setNodeData(Type) : void
++ setNodePointer(Node&lt;Type&gt; *) : void
+
+
+bg=#29FAED</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>90</y>
+      <w>170</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1..n</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>150</y>
+      <w>410</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>bg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>190</x>
+      <y>0</y>
+      <w>80</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>bg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>0</y>
+      <w>140</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>bg=black</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
