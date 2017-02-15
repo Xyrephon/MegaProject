@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "072D6EE5825C33C0D8A7E7ACBA917A3E8AB2855B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7DF7A30D037EA4D94AB31B8374B538BB17ADCF86" : 9223372036854775807,
+    "072D6EE5825C33C0D8A7E7ACBA917A3E8AB2855B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A711A9D1-1E03-431A-98DF-A72C50C07D3D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7DF7A30D037EA4D94AB31B8374B538BB17ADCF86" : "SecondProject\/",
+    "072D6EE5825C33C0D8A7E7ACBA917A3E8AB2855B" : "MegaProject\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MegaProject",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MegaProject.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Xyrephon\/MegaProject.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "072D6EE5825C33C0D8A7E7ACBA917A3E8AB2855B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Xyrephon\/work.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7DF7A30D037EA4D94AB31B8374B538BB17ADCF86"
+    }
+  ]
+}
