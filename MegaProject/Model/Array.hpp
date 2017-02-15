@@ -19,6 +19,7 @@ private:
     Node<Type>* front;
     int size;
 public:
+    Array<Type>();
     Array<Type>(int size);
     int getSize();
     Type getFromIndex(int index);
@@ -26,14 +27,21 @@ public:
 };
 
 //Implementation section of the templated class!
- 
+
+template <class Type>
+Array<Type> :: Array()
+{
+    //DO NOT USE!!!!!
+    //Implemented only for compilation purposes
+}
+
 /*
  Creates an Array of specified size by linking Node<Type> together.
 */
 template <class Type>
 Array<Type> :: Array(int size)
 {
-    assert(size > 0)
+    assert(size > 0);
     this->size = size;
     
     this->front = new Node<Type>();
@@ -51,7 +59,7 @@ Array<Type> :: Array(int size)
 template <class Type>
 Type Array<Type> :: getFromIndex(int index)
 {
-    assert(index >= 0) && index < size);
+    assert(index >= 0 && index < size);
     int value = 0;
     Node<Type> * current = front;
     

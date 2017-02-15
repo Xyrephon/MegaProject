@@ -15,6 +15,7 @@ StructureController :: StructureController()
 {
     wordNode = Node<string>("derpy");
     numberNode = Node<int>();
+    numberArray = Array<int>(1);
     
 }
 void StructureController :: testNodeTypes()

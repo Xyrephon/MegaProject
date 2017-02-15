@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		934BDEEB1E54B284006B2956 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 934BDEE91E54B284006B2956 /* Timer.cpp */; };
 		9395B4271E4B725C00728587 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9395B4251E4B725C00728587 /* IntNodeArray.cpp */; };
 		9395B4291E4B7D3100728587 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9395B4281E4B7D3100728587 /* Runner.cpp */; };
 		9395B42C1E4B7D9C00728587 /* StructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9395B42A1E4B7D9C00728587 /* StructureController.cpp */; };
@@ -28,6 +29,8 @@
 /* Begin PBXFileReference section */
 		93063A841E520902000F8103 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
 		934BDEE81E54AAAA006B2956 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Model/Array.hpp; sourceTree = "<group>"; };
+		934BDEE91E54B284006B2956 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = ../../TimeProject/TimeProject/Model/Timer.cpp; sourceTree = "<group>"; };
+		934BDEEA1E54B284006B2956 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = ../../TimeProject/TimeProject/Model/Timer.hpp; sourceTree = "<group>"; };
 		9395B4251E4B725C00728587 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
 		9395B4261E4B725C00728587 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
 		9395B4281E4B7D3100728587 /* Runner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Runner.cpp; path = Controller/Runner.cpp; sourceTree = "<group>"; };
@@ -49,6 +52,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		934BDEEC1E54B2A7006B2956 /* Typed Data Sample */ = {
+			isa = PBXGroup;
+			children = (
+				93E2004F1E48D5EB005EBBAC /* IntNode.cpp */,
+				9395B4251E4B725C00728587 /* IntNodeArray.cpp */,
+				93E200501E48D5EB005EBBAC /* IntNode.hpp */,
+				9395B4261E4B725C00728587 /* IntNodeArray.hpp */,
+			);
+			name = "Typed Data Sample";
+			sourceTree = "<group>";
+		};
 		9395B42D1E4B7DA000728587 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,12 +101,11 @@
 		93E200521E48D60E005EBBAC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				93E2004F1E48D5EB005EBBAC /* IntNode.cpp */,
-				93E200501E48D5EB005EBBAC /* IntNode.hpp */,
-				9395B4251E4B725C00728587 /* IntNodeArray.cpp */,
-				9395B4261E4B725C00728587 /* IntNodeArray.hpp */,
-				93063A841E520902000F8103 /* Node.hpp */,
+				934BDEE91E54B284006B2956 /* Timer.cpp */,
 				934BDEE81E54AAAA006B2956 /* Array.hpp */,
+				93063A841E520902000F8103 /* Node.hpp */,
+				934BDEEA1E54B284006B2956 /* Timer.hpp */,
+				934BDEEC1E54B2A7006B2956 /* Typed Data Sample */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -157,6 +170,7 @@
 				9395B4291E4B7D3100728587 /* Runner.cpp in Sources */,
 				9395B42C1E4B7D9C00728587 /* StructureController.cpp in Sources */,
 				93E200511E48D5EB005EBBAC /* IntNode.cpp in Sources */,
+				934BDEEB1E54B284006B2956 /* Timer.cpp in Sources */,
 				9395B4271E4B725C00728587 /* IntNodeArray.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
