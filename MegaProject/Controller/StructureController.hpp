@@ -23,6 +23,7 @@ private:
     
     void testIntArray();
     void testNodeTypes();
+    void testArrayTemplate();
 public:
     StructureController();
     void start();
