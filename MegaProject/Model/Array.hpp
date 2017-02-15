@@ -66,7 +66,7 @@ Type Array<Type> :: getFromIndex(int index)
 }
 
 template <class Type>
-void Array<Type> :: setAtIndex(int index, int value)
+void Array<Type> :: setAtIndex(int index, Type value)
 {
     assert(index >= 0 && index < size);
     
@@ -80,6 +80,7 @@ void Array<Type> :: setAtIndex(int index, int value)
     current->setNodeData(value);
 }
 
+template <class Type>
 int Array<Type> :: getSize()
 {
     return size;
