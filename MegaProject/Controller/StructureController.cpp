@@ -29,7 +29,7 @@ void StructureController :: testArrayTemplate()
     arrayTimer.stopTimer();
     arrayTimer.displayTimerInformation();
     arrayTimer.resetTimer();
-    array.Timer.startTimer();
+    arrayTimer.startTimer();
     numberArray = Array<int>(9);
     arrayTimer.stopTimer();
     arrayTimer.displayTimerInformation();

@@ -181,13 +181,14 @@ m2=1..n</panel_attributes>
       <x>820</x>
       <y>280</y>
       <w>310</w>
-      <h>130</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>Array &lt;Type&gt;
 --
 - front : Node&lt;Type&gt;*
 - size : int
 --
++ Array&lt;Type&gt;() : constructor
 + Array&lt;Type&gt;(int size) : constructor
 + getSize() : int
 + getFromIndex(int index) : Type
