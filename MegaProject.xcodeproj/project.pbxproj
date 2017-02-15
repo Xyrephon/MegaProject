@@ -27,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		93063A841E520902000F8103 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
+		934BDEE81E54AAAA006B2956 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Model/Array.hpp; sourceTree = "<group>"; };
 		9395B4251E4B725C00728587 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; };
 		9395B4261E4B725C00728587 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
 		9395B4281E4B7D3100728587 /* Runner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Runner.cpp; path = Controller/Runner.cpp; sourceTree = "<group>"; };
@@ -91,6 +92,7 @@
 				9395B4251E4B725C00728587 /* IntNodeArray.cpp */,
 				9395B4261E4B725C00728587 /* IntNodeArray.hpp */,
 				93063A841E520902000F8103 /* Node.hpp */,
+				934BDEE81E54AAAA006B2956 /* Array.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
