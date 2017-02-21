@@ -29,6 +29,7 @@
 /* Begin PBXFileReference section */
 		93063A841E520902000F8103 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
 		9307E2E51E5C8E1500B2543E /* MegaUML.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MegaUML.pdf; path = Resources/MegaUML.pdf; sourceTree = "<group>"; };
+		9307E2E61E5CA38E00B2543E /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		934BDEE81E54AAAA006B2956 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Model/Array.hpp; sourceTree = "<group>"; };
 		934BDEF01E54BAA3006B2956 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Model/Timer.cpp; sourceTree = "<group>"; };
 		934BDEF11E54BAA3006B2956 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
@@ -112,9 +113,10 @@
 			isa = PBXGroup;
 			children = (
 				934BDEF01E54BAA3006B2956 /* Timer.cpp */,
-				934BDEF11E54BAA3006B2956 /* Timer.hpp */,
+				9307E2E61E5CA38E00B2543E /* List.h */,
 				934BDEE81E54AAAA006B2956 /* Array.hpp */,
 				93063A841E520902000F8103 /* Node.hpp */,
+				934BDEF11E54BAA3006B2956 /* Timer.hpp */,
 				934BDEEC1E54B2A7006B2956 /* Typed Data Sample */,
 			);
 			name = Model;

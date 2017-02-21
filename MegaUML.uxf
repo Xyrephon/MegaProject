@@ -226,4 +226,43 @@ m2=1..n</panel_attributes>
     <panel_attributes>bg=black</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>550</y>
+      <w>540</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>Model :: List&lt;Type&gt;
+--
+- size : int
+- front : Node&lt;Type&gt; *
+--
++ List&lt;Type&gt;() : constructor
++ List&lt;Type&gt;(const List&lt;Type&gt; &amp; source): copy constructor
++ ~List&lt;Type&gt; : destructor
+
++ addAtIndex(int index, Type Value) : void
++ add(Type value) : void
++ remove(int index) : Type
++ setAtIndex(int index, Type data) : Type 
++ getFromIndex(int index) : Type
++ contains(Type data) : bool
++ getSieze() const : int
++ getFront() const : Node&lt;Type&gt; *</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>470</y>
+      <w>50</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
 </diagram>
