@@ -179,34 +179,29 @@ m2=1..n</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>820</x>
-      <y>280</y>
-      <w>310</w>
-      <h>150</h>
+      <y>230</y>
+      <w>490</w>
+      <h>250</h>
     </coordinates>
     <panel_attributes>Array &lt;Type&gt;
 --
 - front : Node&lt;Type&gt;*
 - size : int
 --
-+ Array&lt;Type&gt;() : constructor
++ Array() : default constructor
 + Array&lt;Type&gt;(int size) : constructor
-+ getSize() : int
+
++ ~Array&lt;Type&gt;() : destructor
++ Array&lt;Type&gt;(const Array&lt;Type&gt; &amp; toBeCopied) : copy constructor
+
++ getSize() const : int
++ getFront() const : Node&lt;Type&gt;*
+
 + getFromIndex(int index) : Type
 + setAtIndex(int index, Type value) : void
 
 bg=#00BFF</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1700</x>
-      <y>400</y>
-      <w>60</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;50.0;40.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -219,5 +214,16 @@ bg=#00BFF</panel_attributes>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2=1..n</panel_attributes>
     <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>760</x>
+      <y>230</y>
+      <w>60</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>bg=black</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
