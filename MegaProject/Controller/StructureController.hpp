@@ -24,6 +24,7 @@ private:
     void testIntArray();
     void testNodeTypes();
     void testArrayTemplate();
+    void testAdvancedFeatures();
 public:
     StructureController();
     void start();

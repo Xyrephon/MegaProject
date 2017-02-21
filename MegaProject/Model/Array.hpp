@@ -28,7 +28,6 @@ public:
     //Copy Constructor
     Array<Type>(const Array<Type> & toBeCopied);
     //Assignment Operator overload
-    void operator = (const Array<Type> & toBeAssigned);
     
     
     //Methods
@@ -76,7 +75,7 @@ template <class Type>
 Type Array<Type> :: getFromIndex(int index)
 {
     assert(index >= 0 && index < size);
-    int value = 0;
+    Type value;
     Node<Type> * current = front;
     
     for(int position = 0; position < index; position++)
@@ -130,7 +129,7 @@ Array<Type> :: ~Array()
     {
         //Move to next node in array
         front = front->getNodePointer();
-        cout << "Moving to the next node. At : " << cout << endl;
+        cout << "Moving to the next node. At : " << count << endl;
         //Delete the front pointer
         delete remove;
         cout << "Deleting the old front pointer." << endl;
@@ -147,10 +146,10 @@ Array<Type> :: ~Array()
 
 
 
-
+Copy Constructor
 */
 template <class Type>
-Array<Type :: Array (const Array<Type> & toBeCopied)
+Array<Type> :: Array (const Array<Type> & toBeCopied)
 {
     this-> size = toBeCopied.getSize();
     
