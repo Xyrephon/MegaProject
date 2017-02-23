@@ -232,12 +232,13 @@ m2=1..n</panel_attributes>
       <x>310</x>
       <y>550</y>
       <w>540</w>
-      <h>270</h>
+      <h>290</h>
     </coordinates>
     <panel_attributes>Model :: List&lt;Type&gt;
 --
 - size : int
 - front : Node&lt;Type&gt; *
+- end : Node&lt;Type&gt; *
 --
 + List&lt;Type&gt;() : constructor
 + List&lt;Type&gt;(const List&lt;Type&gt; &amp; source): copy constructor
