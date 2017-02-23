@@ -232,7 +232,7 @@ m2=1..n</panel_attributes>
       <x>310</x>
       <y>550</y>
       <w>540</w>
-      <h>260</h>
+      <h>270</h>
     </coordinates>
     <panel_attributes>Model :: List&lt;Type&gt;
 --
@@ -244,7 +244,8 @@ m2=1..n</panel_attributes>
 + ~List&lt;Type&gt; : destructor
 
 + addAtIndex(int index, Type Value) : void
-+ add(Type value) : void
++ addFront(Type value) : void
++ addEnd(Type value) : void
 + remove(int index) : Type
 + setAtIndex(int index, Type data) : Type 
 + getFromIndex(int index) : Type

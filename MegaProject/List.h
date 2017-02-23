@@ -16,13 +16,18 @@ template <class Type>
 class List
 {
 private:
-    Node<Type>* front;
     int size;
+    Node<Type>* front;
+    Node<Type>* end;
 public:
     //Constructors
     List<Type>();
     List<Type>(const List<Type> & source);
     ~List<Type>();
+    
+    int getSize() const;
+    Node<Type> * getFront() const;
+    Node<Type> * getEnd() const;
     
     //Methods
     void addAtIndex(int index, Type value);
@@ -40,7 +45,9 @@ public:
 template <class Type>
 List<Type> :: List()
 {
-    
+    this->size = 0;
+    this->front = nullptr;
+    this->end = nullptr;
 }
 
 template <class Type>
@@ -56,6 +63,31 @@ List<Type> :: ~List<Type>()
 }
 
 template <class Type>
-void List<Type> ::
+void List<Type> :: addAtIndex(int index, Type value)
+{
+    
+}
+
+template <class Type>
+void List<Type> :: addFront(Type value)
+{
+    if (size == 0)
+    {
+        Node<Type> * first = new Node<Type>(value);
+        this->front = first;
+        this->end = first;
+    }
+    else
+    {
+        Node<Type> * newFirst = new Node<Type>();
+        newFirst->setNodeData(value);
+        newFirst->setNodePointer(front);
+        //or
+        //Node<Type> * newFirst = new Node<Type>(value, front);
+        front = newFirst;
+    }
+    
+    size++;
+}
 
 #endif /* List_h */
