@@ -31,13 +31,12 @@ public:
     
     //Methods
     void addAtIndex(int index, Type value);
-    void add(Type value);
+    void addFront(Type value);
+    void addEnd(Type value);
     Type remove(int index);
     Type setAtIndex(int index, Type data);
     Type getFromIndex(int index);
     bool contains(Type data);
-    int getSize() const;
-    Node<Type>* getFront() const;
 };
 
 //Implementation
@@ -57,15 +56,11 @@ List<Type> :: List(const List<Type> & source)
 }
 
 template <class Type>
-List<Type> :: ~List<Type>()
+List<Type> :: ~List()
 {
-    
-}
-
-template <class Type>
-void List<Type> :: addAtIndex(int index, Type value)
-{
-    
+    this->size = 0;
+    this->front = nullptr;
+    this->end = nullptr;
 }
 
 template <class Type>
@@ -127,11 +122,11 @@ void List<Type> :: addAtIndex(int index, Type value)
         Node<Type> * current = front;
         Node<Type> * previous = nullptr;
         
-        for(int position = 0; position < index; position ++)
+        for(int position = 0; position < index; position++)
         {
             previous = current;
             current = current->getNodePointer();
-        }
+        }
         
         previous->setNodePointer(insertedNode);
         insertedNode->setNodePointer(current);
@@ -148,7 +143,7 @@ Type List<Type> :: remove(int index)
     
     Node<Type> * current = front;
     Node<Type> * previous = nullptr;
-    Node<Type> * tobeRemoved = nullptr;
+    Node<Type> * toBeRemoved = nullptr;
     if(index == 0)
     {
         toBeRemoved = front;
@@ -187,6 +182,59 @@ Type List<Type> :: remove(int index)
     
     size--;
     return removed;
+}
+
+template <class Type>
+Type List<Type> :: getFromIndex(int index)
+{
+    assert(index >= 0 && index < size);
+    Type information;
+    
+    Node<Type> * current = front;
+    for (int position = 0; position < index; position++)
+    {
+        current = current->getNodePointer();
+    }
+    
+    information = current->getNodeData();
+    
+    return information;
+}
+
+template <class Type>
+bool List<Type> :: contains(Type findMe)
+{
+    bool isInList = false;
+    Node<Type> * current = front;
+    
+    for (int index = 0; index < size; index ++)
+    {
+        if(current->getNodeData == findMe)
+        {
+            isInList = true;
+            return isInList;
+        }
+    }
+    
+    return isInList;
+}
+
+template <class Type>
+int List<Type> :: getSize() const
+{
+    return this->size;
+}
+
+template <class Type>
+Node<Type> * List<Type> :: getFront() const
+{
+    return this->front;
+}
+
+template <class Type>
+Node<Type> * List<Type> :: getEnd() const
+{
+    return this->end;
 }
 
 #endif /* List_h */

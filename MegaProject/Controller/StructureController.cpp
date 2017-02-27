@@ -8,6 +8,7 @@
 #include "IntNodeArray.hpp"
 #include "StructureController.hpp"
 #include "../Model/Timer.hpp"
+#include "../Model/List.h"
 #include <iostream>
 
 using namespace std;
@@ -43,6 +44,38 @@ void StructureController :: testNodeTypes()
     cout << numberNode.getNodeData() << endl;
 }
 
+void StructureController :: testListIntro()
+{
+    List<int> sample;
+    sample.addFront(2);
+    sample.addEnd(3);
+    sample.addFront(1);
+    cout << "This should go 1, 2, 3" << endl;
+    
+    for(int index = 0; index < sample.getSize(); index++)
+    {
+        cout << sample.getFromIndex(index) << endl;
+    }
+    
+    cout << "Size should read 3 and is " << sample.getSize() << endl;
+    
+    sample.remove(1);
+    cout << "This should go 1, 3" << endl;
+    
+    for(int index = 0; index < sample.getSize(); index++)
+    {
+        cout << sample.getFromIndex(index) << endl;
+    }
+    
+    sample.addAtIndex(1, 7);
+    cout << "This should go 1, 7, 3" << endl;
+    
+    for(int index = 0; index < sample.getSize(); index++)
+    {
+        cout << sample.getFromIndex(index) << endl;
+    }
+}
+
 void StructureController :: testIntArray()
 {
     cout << "Creating an IntNodeArray" << endl;
@@ -65,11 +98,7 @@ void StructureController :: testIntArray()
 
 void StructureController :: start()
 {
-    cout << "Going to test the IntNodeArray" << endl;
-    testIntArray();
-    cout << "Finished Int ArrayNode testing" << endl;
-    testNodeTypes();
-    testAdvancedFeatures();
+    testListIntro();
 }
 
 void StructureController :: testAdvancedFeatures()

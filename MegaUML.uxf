@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
+      <x>10</x>
       <y>70</y>
       <w>190</w>
       <h>90</h>
@@ -20,7 +20,7 @@ Constructors</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
+      <x>10</x>
       <y>160</y>
       <w>310</w>
       <h>170</h>
@@ -43,7 +43,7 @@ bg=#001CFF</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>720</x>
+      <x>730</x>
       <y>10</y>
       <w>350</w>
       <h>220</h>
@@ -69,7 +69,7 @@ bg=#12FF00</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>0</x>
+      <x>10</x>
       <y>10</y>
       <w>190</w>
       <h>60</h>
@@ -82,7 +82,7 @@ bg=cyan</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>270</x>
+      <x>280</x>
       <y>10</y>
       <w>310</w>
       <h>150</h>
@@ -104,7 +104,7 @@ bg=#179B0D
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>310</x>
+      <x>320</x>
       <y>230</y>
       <w>450</w>
       <h>250</h>
@@ -133,7 +133,7 @@ bg=#29FAED</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>570</x>
+      <x>580</x>
       <y>100</y>
       <w>170</w>
       <h>40</h>
@@ -145,7 +145,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>310</x>
+      <x>320</x>
       <y>160</y>
       <w>410</w>
       <h>70</h>
@@ -156,7 +156,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>190</x>
+      <x>200</x>
       <y>10</y>
       <w>80</w>
       <h>150</h>
@@ -167,7 +167,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>580</x>
+      <x>590</x>
       <y>10</y>
       <w>140</w>
       <h>220</h>
@@ -178,7 +178,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>820</x>
+      <x>830</x>
       <y>230</y>
       <w>490</w>
       <h>250</h>
@@ -206,7 +206,7 @@ bg=#00BFF</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>750</x>
+      <x>760</x>
       <y>340</y>
       <w>90</w>
       <h>40</h>
@@ -218,7 +218,7 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>760</x>
+      <x>770</x>
       <y>230</y>
       <w>60</w>
       <h>250</h>
@@ -229,8 +229,8 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>310</x>
-      <y>550</y>
+      <x>880</x>
+      <y>540</y>
       <w>540</w>
       <h>290</h>
     </coordinates>
@@ -258,13 +258,54 @@ m2=1..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>550</x>
+      <x>560</x>
       <y>470</y>
-      <w>50</w>
-      <h>100</h>
+      <w>590</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2=0..n</panel_attributes>
-    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+    <additional_attributes>570.0;70.0;570.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>470</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>540</y>
+      <w>530</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>BiDirectionalNode&lt;Type&gt;
+-
+- nodeData : Type
+- nextPointer : BiDirectionalNode&lt;Type&gt; *
+- previousPointer : BiDirectionalNode&lt;Type&gt; *
+
+-
+Constructors
++ BiDirectionalNode&lt;Type&gt;() : constructor
++ BiDirectionalNode&lt;Type&gt;(Type value) : constructor
++ BiDirectionalNode&lt;Type&gt;(Type value, Node&lt;Type&gt; * next) : constructor
+
+Accessors
+
+- getNodeData() : Type
+- getNextPointer() : Node&lt;Type&gt;()
+- getPreviousPointer() : Node&lt;Type&gt;()
+- setNodeData(Type) : void
+- setNextPointer(Node&lt;Type&gt; *) : void
+- set Previous Pointer(Node&lt;Type&gt; * ) : void</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
