@@ -229,8 +229,8 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>880</x>
-      <y>540</y>
+      <x>850</x>
+      <y>480</y>
       <w>540</w>
       <h>290</h>
     </coordinates>
@@ -263,12 +263,12 @@ bg=#4245f4</panel_attributes>
     <coordinates>
       <x>560</x>
       <y>470</y>
-      <w>610</w>
-      <h>90</h>
+      <w>310</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2=0..n</panel_attributes>
-    <additional_attributes>590.0;70.0;590.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
+    <additional_attributes>290.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -319,7 +319,7 @@ bg=#232487</panel_attributes>
     <coordinates>
       <x>320</x>
       <y>480</y>
-      <w>1000</w>
+      <w>530</w>
       <h>60</h>
     </coordinates>
     <panel_attributes>bg=black</panel_attributes>
