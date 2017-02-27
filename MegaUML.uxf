@@ -263,17 +263,17 @@ bg=#4245f4</panel_attributes>
     <coordinates>
       <x>560</x>
       <y>470</y>
-      <w>590</w>
+      <w>610</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m2=0..n</panel_attributes>
-    <additional_attributes>570.0;70.0;570.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
+    <additional_attributes>590.0;70.0;590.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>410</x>
+      <x>430</x>
       <y>470</y>
       <w>30</w>
       <h>90</h>
@@ -312,6 +312,17 @@ Accessors
 
 
 bg=#232487</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>480</y>
+      <w>1000</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>bg=black</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
