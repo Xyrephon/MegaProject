@@ -252,7 +252,10 @@ m2=1..n</panel_attributes>
 + getFromIndex(int index) : Type
 + contains(Type data) : bool
 + getSieze() const : int
-+ getFront() const : Node&lt;Type&gt; *</panel_attributes>
++ getFront() const : Node&lt;Type&gt; *
+
+
+bg=#4245f4</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -305,7 +308,10 @@ Accessors
 - getPreviousPointer() : Node&lt;Type&gt;()
 - setNodeData(Type) : void
 - setNextPointer(Node&lt;Type&gt; *) : void
-- set Previous Pointer(Node&lt;Type&gt; * ) : void</panel_attributes>
+- set Previous Pointer(Node&lt;Type&gt; * ) : void
+
+
+bg=#232487</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
