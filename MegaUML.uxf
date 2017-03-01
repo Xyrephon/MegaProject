@@ -40,6 +40,8 @@ transparency=1
 + getExecutionTimeInMicroseconds() : long
 +Timer() : constructor
 
+
+fg=white
 bg=#001CFF
 transparency=1</panel_attributes>
     <additional_attributes/>
@@ -146,7 +148,8 @@ bg=#29FAED</panel_attributes>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-m2=1..n</panel_attributes>
+m2=1..n
+fg=white</panel_attributes>
     <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
   </element>
   <element>
@@ -174,6 +177,7 @@ m2=1..n</panel_attributes>
 + getFromIndex(int index) : Type
 + setAtIndex(int index, Type value) : void
 
+fg=white
 transparency=1
 bg=#00BFF</panel_attributes>
     <additional_attributes/>
@@ -187,7 +191,8 @@ bg=#00BFF</panel_attributes>
       <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-m2=1..n</panel_attributes>
+m2=1..n
+fg=white</panel_attributes>
     <additional_attributes>320.0;10.0;70.0;10.0;10.0;30.0</additional_attributes>
   </element>
   <element>
@@ -218,6 +223,7 @@ m2=1..n</panel_attributes>
 + getSieze() const : int
 + getFront() const : Node&lt;Type&gt; *
 
+fg=white
 transparency=1
 bg=#4245f4</panel_attributes>
     <additional_attributes/>
@@ -231,7 +237,8 @@ bg=#4245f4</panel_attributes>
       <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-m2=0..n</panel_attributes>
+m2=0..n
+fg=white</panel_attributes>
     <additional_attributes>290.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
   </element>
   <element>
@@ -242,7 +249,8 @@ m2=0..n</panel_attributes>
       <w>30</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+fg=white</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
   </element>
   <element>
@@ -274,6 +282,7 @@ Accessors
 - setNextPointer(Node&lt;Type&gt; *) : void
 - set Previous Pointer(Node&lt;Type&gt; * ) : void
 
+fg=white
 transparency=1
 bg=#232487</panel_attributes>
     <additional_attributes/>
@@ -314,7 +323,8 @@ bg=#42f4ee</panel_attributes>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-m2=0..n</panel_attributes>
+m2=0..n
+fg=white</panel_attributes>
     <additional_attributes>270.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
@@ -430,7 +440,7 @@ transparency=1</panel_attributes>
       <h>1280</h>
     </coordinates>
     <panel_attributes>bg=black
-transparency=20</panel_attributes>
+transparency=1</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
