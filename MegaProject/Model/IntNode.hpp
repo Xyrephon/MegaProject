@@ -27,7 +27,7 @@ public:
     int getNodeData();
     IntNode * getNodePointer();
     void setNodeData(int value);
-    void setNodePointer(IntNode * updatedNode);
+    void setNextPointerIntNode * updatedNode);
     
     
 };

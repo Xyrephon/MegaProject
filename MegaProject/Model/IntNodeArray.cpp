@@ -24,7 +24,7 @@ IntNodeArray :: IntNodeArray(int size)
     for(int index = 1; index < size; index ++)
     {
         IntNode * currentNode = new IntNode();
-        currentNode->setNodePointer(head);
+        currentNode->setNextPointerhead);
         head = currentNode;
     }
 }
