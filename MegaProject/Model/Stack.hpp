@@ -9,13 +9,20 @@
 #ifndef Stack_h
 #define Stack_h
 
+#include "DoublyLinkedList.hpp"
+
 template <class Type>
-class Stack : DoublyLinkedList<Type>
+class Stack : public DoublyLinkedList<Type>
 {
 private:
 public:
     Stack();
-    void add(Type value)
+    ~Stack();
+    void add(Type value);
+    Type remove(int index);
+    Type pop();
+    Type peek();
+    void push(Type data);
 };
 
 /*
@@ -23,9 +30,9 @@ public:
  */
 
 template <class Type>
-void Stack<Type> :: add(Type valueToAdd) : DoublyLinkedList<Type> :: add(valueToAdd)
+void Stack<Type> :: add(Type valueToAdd)
 {
-    
+    push(valueToAdd);
 }
 
 #endif /* Stack_h */

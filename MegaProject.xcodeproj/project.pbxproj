@@ -29,6 +29,9 @@
 /* Begin PBXFileReference section */
 		93063A841E520902000F8103 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; };
 		9307E2E51E5C8E1500B2543E /* MegaUML.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MegaUML.pdf; path = Resources/MegaUML.pdf; sourceTree = "<group>"; };
+		932C3FCE1E69C9CE0005785D /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Model/DoubleList.hpp; sourceTree = "<group>"; };
+		932C3FCF1E69C9ED0005785D /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Model/CircularList.hpp; sourceTree = "<group>"; };
+		932C3FD01E69C9FC0005785D /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Model/Queue.hpp; sourceTree = "<group>"; };
 		934BDEE81E54AAAA006B2956 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Model/Array.hpp; sourceTree = "<group>"; };
 		934BDEF01E54BAA3006B2956 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Model/Timer.cpp; sourceTree = "<group>"; };
 		934BDEF11E54BAA3006B2956 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
@@ -63,6 +66,19 @@
 				9307E2E51E5C8E1500B2543E /* MegaUML.pdf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		932C3FD11E69CBEC0005785D /* DoublyLinkedLists */ = {
+			isa = PBXGroup;
+			children = (
+				93BCC6091E648D260089566A /* BiDirectionalNode.hpp */,
+				932C3FCF1E69C9ED0005785D /* CircularList.hpp */,
+				932C3FCE1E69C9CE0005785D /* DoubleList.hpp */,
+				937C459D1E672DA000EE14A6 /* DoublyLinkedList.hpp */,
+				932C3FD01E69C9FC0005785D /* Queue.hpp */,
+				937C459E1E672EAC00EE14A6 /* Stack.hpp */,
+			);
+			name = DoublyLinkedLists;
 			sourceTree = "<group>";
 		};
 		934BDEEC1E54B2A7006B2956 /* Typed Data Sample */ = {
@@ -118,11 +134,9 @@
 				934BDEF01E54BAA3006B2956 /* Timer.cpp */,
 				93BCC6081E647C660089566A /* List.h */,
 				934BDEE81E54AAAA006B2956 /* Array.hpp */,
-				93BCC6091E648D260089566A /* BiDirectionalNode.hpp */,
-				937C459D1E672DA000EE14A6 /* DoublyLinkedList.hpp */,
 				93063A841E520902000F8103 /* Node.hpp */,
-				937C459E1E672EAC00EE14A6 /* Stack.hpp */,
 				934BDEF11E54BAA3006B2956 /* Timer.hpp */,
+				932C3FD11E69CBEC0005785D /* DoublyLinkedLists */,
 				934BDEEC1E54B2A7006B2956 /* Typed Data Sample */,
 			);
 			name = Model;
