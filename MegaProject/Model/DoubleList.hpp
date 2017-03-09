@@ -136,8 +136,6 @@ Type DoubleList<Type> :: getFromIndex(int index)
     
     information = current->getNodeData();
     return information;
-    
-    
 }
 
 template <class Type>

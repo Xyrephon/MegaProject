@@ -98,7 +98,7 @@ void StructureController :: testIntArray()
 
 void StructureController :: start()
 {
-    testListIntro();
+    testListTiming();
 }
 
 void StructureController :: testAdvancedFeatures()
