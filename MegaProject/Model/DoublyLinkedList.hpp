@@ -6,6 +6,7 @@
 //  Copyright © 2017 Tucker, Jonah. All rights reserved.
 //
 
+
 #ifndef DoublyLinkedList_h
 #define DoublyLinkedList_h
 
@@ -21,12 +22,16 @@ private:
 public:
     virtual void add(Type value) = 0;
     virtual Type remove(int index) = 0;
-    virtual DoublyLinkedList();
-    virtual ~DoublyLinkedList() = 0;
+    DoublyLinkedList();
+    virtual ~DoublyLinkedList();
     
     int getSize() const;
     BiDirectionalNode<Type> * getFront() const;
     BiDirectionalNode<Type> * getEnd() const;
+    
+    void setFront(BiDirectionalNode<Type> * front);
+    void setSize(int updated);
+    void setEnd(BiDirectionalNode<Type> * end);
 };
 
 
@@ -36,6 +41,13 @@ DoublyLinkedList<Type> :: DoublyLinkedList()
     this->size = 0;
     this->front = nullptr;
     this->end = nullptr;
+}
+
+template <class Type>
+DoublyLinkedList<Type> :: ~DoublyLinkedList()
+{
+    //Implemented only to avoid errors.
+    //Just like a Java interface method.
 }
 
 template <class Type>
@@ -56,4 +68,21 @@ BiDirectionalNode<Type> * DoublyLinkedList<Type> :: getEnd() const
     return this->end;
 }
 
+template <class Type>
+void DoublyLinkedList<Type> :: setSize(int size)
+{
+    this->size = size;
+}
+
+template <class Type>
+void DoublyLinkedList<Type> :: setFront(BiDirectionalNode<Type> * front)
+{
+    this->front = front;
+}
+
+template <class Type>
+void DoublyLinkedList<Type> :: setEnd(BiDirectionalNode<Type> * end)
+{
+    this->end = end;
+}
 #endif /* DoublyLinkedList_h */

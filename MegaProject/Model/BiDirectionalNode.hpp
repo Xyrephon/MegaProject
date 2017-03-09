@@ -31,7 +31,7 @@ public:
 };
 
 template <class Type>
-BiDirectionalNode<Type> :: BiDriectionalNode() : Node<Type>()
+BiDirectionalNode<Type> :: BiDirectionalNode() : Node<Type>()
 {
     this->nextPointer = nullptr;
     this->previous = nullptr;
@@ -39,7 +39,7 @@ BiDirectionalNode<Type> :: BiDriectionalNode() : Node<Type>()
 
 
 template <class Type>
-BiDirectionalNode<Type> :: BiDriectionalNode(Type data) : Node(data)
+BiDirectionalNode<Type> :: BiDirectionalNode(Type data) : Node<Type>(data)
 {
     this->nextPointer = nullptr;
     this->previous = nullptr;

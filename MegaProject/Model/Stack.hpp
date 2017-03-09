@@ -69,7 +69,7 @@ void Stack<Type> :: add(Type valueToAdd)
 template <class Type>
 void Stack<Type> :: push(Type addThing)
 {
-    BiDirectionalNode<Type> * addToStack = new BiDirectionalNode(addedThing);
+    BiDirectionalNode<Type> * addToStack = new BiDirectionalNode<Type>(addThing);
  
     if(this->getSize() == 0 || this->getFront() == nullptr || this->getEnd() == nullptr)
     {

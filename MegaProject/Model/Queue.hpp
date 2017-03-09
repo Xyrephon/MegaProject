@@ -21,9 +21,10 @@ public:
     void add(Type data);
     Type remove(int index);
     void enqueue(Type data);
-    Type deqeue();
+    Type dequeue();
     Type peek();
 };
+
 template <class Type>
 Queue<Type> :: Queue() : DoublyLinkedList<Type>()
 {
@@ -117,9 +118,9 @@ Type Queue<Type> :: dequeue()
     }
     else
     {
-        this->setFront(removeMe->getNextPointer())
+        this->setFront(removeMe->getNextPointer());
     }
-    this-setFront()->setPreviousPointer(nullptr);
+    this->setFront()->setPreviousPointer(nullptr);
     
     delete removeMe;
     this->setSize(this->getSize() - 1);
