@@ -19,6 +19,7 @@
 #include "../Model/Queue.hpp"
 #include "../Model/CircularList.hpp"
 #include <string>
+
 using namespace std;
 
 class StructureController
