@@ -89,6 +89,27 @@ Type DoubleList<Type> :: remove(int index)
 template <class Type>
 void DoubleList<Type> :: addAtIndexFast(int index, Type value)
 {
+    //Not finished
+    assert(index >= 0 && index < this->getSize());
+    Type valueAtIndex;
+    BiDirectionalNode<Type> * reference;
+    if(index < this->getSize() /2)
+    {
+        reference = this->getFront();
+        for(int position = 0; position < index; position++)
+        {
+            reference = reference ->getPreviousPointer();
+        }
+    }
+    else
+    {
+        reference = this->getEnd();
+        for(int position = this->getSize() - 1; position > index; position--)
+        {
+            reference = reference->getPreviousPointer();
+        }
+    }
+    
     
 }
 
