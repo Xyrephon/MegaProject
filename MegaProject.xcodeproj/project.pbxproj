@@ -134,15 +134,15 @@
 		93E200521E48D60E005EBBAC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				932375BE1E7C2CFA00E40ECE /* Meme.cpp */,
 				934BDEF01E54BAA3006B2956 /* Timer.cpp */,
 				93BCC6081E647C660089566A /* List.h */,
 				934BDEE81E54AAAA006B2956 /* Array.hpp */,
+				932375BF1E7C2CFA00E40ECE /* Meme.hpp */,
 				93063A841E520902000F8103 /* Node.hpp */,
 				934BDEF11E54BAA3006B2956 /* Timer.hpp */,
 				932C3FD11E69CBEC0005785D /* DoublyLinkedLists */,
 				934BDEEC1E54B2A7006B2956 /* Typed Data Sample */,
-				932375BE1E7C2CFA00E40ECE /* Meme.cpp */,
-				932375BF1E7C2CFA00E40ECE /* Meme.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";

@@ -77,11 +77,11 @@ void Stack<Type> :: push(Type addThing)
     }
     else
     {
-        this->getEnd->setNextPointer(addToStack);
+        this->getEnd()->setNextPointer(addToStack);
         addToStack->setPreviousPointer(this->getEnd());
     }
     this->setEnd(addToStack);
-    this->size++;
+    this->setSize(this->getSize() + 1);
 }
 
 /*
@@ -99,7 +99,7 @@ template <class Type>
 Type Stack<Type> :: peek()
 {
     assert(this->getSize() > 0);
-    return this->end->getNodeData();
+    return this->getEnd()->getNodeData();
 }
 
 /*

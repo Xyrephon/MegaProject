@@ -28,6 +28,10 @@ private:
     Node<int> numberNode;
     Node<string> wordNode;
     Array<int> numberArray;
+    List<int> numbers;
+    Stack<int> numberStack;
+    Queue<int> numberQueue;
+    DoubleList<int> numberDoubleList;
     
     void testIntArray();
     void testNodeTypes();
@@ -35,6 +39,10 @@ private:
     void testAdvancedFeatures();
     void testListIntro();
     void testListTiming();
+    void testLists();
+    void testStacks();
+    void testQueues();
+    void testDoubleList();
 public:
     StructureController();
     void start();

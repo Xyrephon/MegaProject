@@ -18,6 +18,43 @@ StructureController :: StructureController()
     wordNode = Node<string>("derpy");
     numberNode = Node<int>();
     numberArray = Array<int>(1);
+    numbers = List<int>();
+    numberStack = Stack<int>();
+    numberQueue = Queue<int>();
+    numberDoubleList = DoubleList<int>();
+    
+}
+
+
+void StructureController :: start()
+{
+    testLists();
+    testStacks();
+    
+}
+
+void StructureController :: testLists()
+{
+    numbers.addFront(3);
+    numbers.addEnd(8);
+    cout << "End should be 8 and is: " << numbers.getEnd()->getNodeData() << endl;
+    cout << "Head should be 3 and is: " << numbers.getFront()->getNodeData() << endl;
+}
+
+void StructureController :: testStacks()
+{
+    cout << "Creating a stack..." << endl;
+    numberStack.add(10);
+    numberStack.push(12);
+    cout << "The size should be 2 and is: " << numberStack.getSize() << endl;
+    numberStack.pop();
+    cout << "The size should be 1 and is: " << numberStack.getSize() << endl;
+    numberStack.push(5);
+    numberStack.push(2);
+    cout << "Peek should be 2 and is: " << numberStack.peek() << endl;
+    numberStack.remove(2);
+    cout << "Peek should be 5 and is: " << numberStack.peek() << endl;
+    cout << "The size is: " << numberStack.getSize() << endl;
     
 }
 
@@ -96,10 +133,6 @@ void StructureController :: testIntArray()
     }
 }
 
-void StructureController :: start()
-{
-    testListTiming();
-}
 
 void StructureController :: testAdvancedFeatures()
 {
