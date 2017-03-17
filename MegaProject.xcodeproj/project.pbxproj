@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		932375C01E7C2CFA00E40ECE /* Meme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 932375BE1E7C2CFA00E40ECE /* Meme.cpp */; };
 		934BDEF21E54BAA3006B2956 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 934BDEF01E54BAA3006B2956 /* Timer.cpp */; };
 		9395B4271E4B725C00728587 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9395B4251E4B725C00728587 /* IntNodeArray.cpp */; };
 		9395B4291E4B7D3100728587 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9395B4281E4B7D3100728587 /* Runner.cpp */; };
@@ -29,6 +30,8 @@
 /* Begin PBXFileReference section */
 		93063A841E520902000F8103 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; lineEnding = 0; name = Node.hpp; path = Model/Node.hpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		9307E2E51E5C8E1500B2543E /* MegaUML.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = MegaUML.pdf; path = Resources/MegaUML.pdf; sourceTree = "<group>"; };
+		932375BE1E7C2CFA00E40ECE /* Meme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Meme.cpp; path = Model/Meme.cpp; sourceTree = "<group>"; };
+		932375BF1E7C2CFA00E40ECE /* Meme.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Meme.hpp; path = Model/Meme.hpp; sourceTree = "<group>"; };
 		932C3FCE1E69C9CE0005785D /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Model/DoubleList.hpp; sourceTree = "<group>"; };
 		932C3FCF1E69C9ED0005785D /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Model/CircularList.hpp; sourceTree = "<group>"; };
 		932C3FD01E69C9FC0005785D /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Model/Queue.hpp; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 				934BDEF11E54BAA3006B2956 /* Timer.hpp */,
 				932C3FD11E69CBEC0005785D /* DoublyLinkedLists */,
 				934BDEEC1E54B2A7006B2956 /* Typed Data Sample */,
+				932375BE1E7C2CFA00E40ECE /* Meme.cpp */,
+				932375BF1E7C2CFA00E40ECE /* Meme.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 				9395B4291E4B7D3100728587 /* Runner.cpp in Sources */,
 				9395B42C1E4B7D9C00728587 /* StructureController.cpp in Sources */,
 				93E200511E48D5EB005EBBAC /* IntNode.cpp in Sources */,
+				932375C01E7C2CFA00E40ECE /* Meme.cpp in Sources */,
 				934BDEF21E54BAA3006B2956 /* Timer.cpp in Sources */,
 				9395B4271E4B725C00728587 /* IntNodeArray.cpp in Sources */,
 			);
