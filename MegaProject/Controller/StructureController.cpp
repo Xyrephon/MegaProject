@@ -30,11 +30,13 @@ void StructureController :: start()
 {
     testLists();
     testStacks();
-    
+    testQueues();
+    testDoubleList();
 }
 
 void StructureController :: testLists()
 {
+    cout << "Creating a list..." << endl;
     numbers.addFront(3);
     numbers.addEnd(8);
     cout << "End should be 8 and is: " << numbers.getEnd()->getNodeData() << endl;
@@ -56,6 +58,34 @@ void StructureController :: testStacks()
     cout << "Peek should be 5 and is: " << numberStack.peek() << endl;
     cout << "The size is: " << numberStack.getSize() << endl;
     
+}
+
+void StructureController :: testDoubleList()
+{
+    cout << "Creating a DoubleList..." << endl;
+    numberDoubleList.add(1);
+    numberDoubleList.add(2);
+    numberDoubleList.addAtIndex(1, 10);
+    cout << "The size should be 3 and is: " << numberDoubleList.getSize() << endl;
+    cout << "Number should be 10 and is: " << numberDoubleList.getFromIndex(1) << endl;
+    cout << "Number should be 2 and is: " << numberDoubleList.getFromIndexFast(2) << endl;
+    cout << "The size is: " << numberDoubleList.getSize() << endl;
+}
+
+void StructureController :: testQueues()
+{
+    cout << "Creating a queue..." << endl;
+    numberQueue.add(0);
+    numberQueue.enqueue(13);
+    cout << "The size should be 2 and is: " << numberQueue.getSize() << endl;
+    numberQueue.dequeue();
+    cout << "The size should be 1 and is: " << numberQueue.getSize() << endl;
+    numberQueue.enqueue(2);
+    numberQueue.enqueue(17);
+    cout << "Peek should be 13 and is: " << numberQueue.peek() << endl;
+    numberQueue.remove(0);
+    cout << "Peek should be 2 and is: " << numberQueue.peek() << endl;
+    cout << "This size is: " << numberQueue.getSize() << endl;
 }
 
 void StructureController :: testArrayTemplate()

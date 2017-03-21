@@ -19,6 +19,7 @@ public:
     DoubleList();
     ~DoubleList();
     void add(Type data);
+    void addFront(Type data);
     Type remove(int index);
     void addAtIndexFast(int index, Type value);
     void addAtIndex(int index, Type value);
@@ -60,6 +61,24 @@ void DoubleList<Type> :: add(Type value)
         addedNode->setPreviousPointer(this->getEnd());
     }
     this->setEnd(addedNode);
+    this->setSize(this->getSize() + 1);
+}
+
+template <class Type>
+void DoubleList<Type> :: addFront(Type value)
+{
+    BiDirectionalNode<Type> * addedNode = new BiDirectionalNode<Type>(value);
+    if(this->getSize() == 0)
+    {
+        this->setFront(addedNode);
+        this->setEnd(addedNode);
+    }
+    else
+    {
+        this->getFront()->setPreviousPointer(addedNode);
+        addedNode->setNextPointer(this->getEnd());
+    }
+    this->setFront(addedNode);
     this->setSize(this->getSize() + 1);
 }
 
@@ -116,31 +135,33 @@ void DoubleList<Type> :: addAtIndexFast(int index, Type value)
 template <class Type>
 void DoubleList<Type> :: addAtIndex(int index, Type value)
 {
-    assert(index >= 0 && index <= this->getSize);
+    assert(index >= 0 && index <= this->getSize());
     if(index == 0)
     {
         addFront(value);
     }
-    else if (this->getSize == index)
+    else if (this->getSize() == index)
     {
-        addEnd(value);
+        add(value);
     }
     else
     {
         BiDirectionalNode<Type> * insertedNode = new BiDirectionalNode<Type>(value);
-        BiDirectionalNode<Type> * current = this->getFront;
+        BiDirectionalNode<Type> * current = this->getFront();
         BiDirectionalNode<Type> * previous = nullptr;
         
         for(int position = 0; position < index; position++)
         {
             previous = current;
-            current = current->getNodePointer();
+            current = current->getNextPointer();
         }
         
         previous->setNextPointer(insertedNode);
         insertedNode->setNextPointer(current);
+        insertedNode->setPreviousPointer(previous);
+        current->setPreviousPointer(insertedNode);
         
-        this->getSize++;
+        this->setSize(this->getSize() + 1);
     }
 }
 
