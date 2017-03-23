@@ -214,6 +214,7 @@ bool List<Type> :: contains(Type findMe)
             isInList = true;
             return isInList;
         }
+        current = current->getNodePointer();
     }
     
     return isInList;
