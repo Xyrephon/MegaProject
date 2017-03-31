@@ -8,7 +8,6 @@
 
 #ifndef Meme_hpp
 #define Meme_hpp
-
 #include <string>
 
 using namespace std;
@@ -31,6 +30,11 @@ public:
     void setDankness(int dank);
     void setHipsterQuotient(double hipsterQuotient);
     void setMainstream(bool mainstream);
+    
+    //Overloading the comparison operators to allow for sorting of Meme data
+    bool operator < (Meme& compared);
+    bool operator > (const Meme& compared) const;
+    bool operator == (const Meme& compared) const;
 };
 
 #endif /* Meme_hpp */

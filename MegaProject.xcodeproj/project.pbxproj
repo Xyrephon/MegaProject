@@ -13,6 +13,7 @@
 		9395B4291E4B7D3100728587 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9395B4281E4B7D3100728587 /* Runner.cpp */; };
 		9395B42C1E4B7D9C00728587 /* StructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9395B42A1E4B7D9C00728587 /* StructureController.cpp */; };
 		93E200511E48D5EB005EBBAC /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93E2004F1E48D5EB005EBBAC /* IntNode.cpp */; };
+		93E28C011E8E9F4A009FE000 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93E28BFF1E8E9F4A009FE000 /* CrimeData.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,8 @@
 		93E200451E48D410005EBBAC /* MegaProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E2004F1E48D5EB005EBBAC /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		93E200501E48D5EB005EBBAC /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; lineEnding = 0; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		93E28BFF1E8E9F4A009FE000 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CrimeData.cpp; path = Model/CrimeData.cpp; sourceTree = "<group>"; };
+		93E28C001E8E9F4A009FE000 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CrimeData.hpp; path = Model/CrimeData.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,8 @@
 				934BDEF11E54BAA3006B2956 /* Timer.hpp */,
 				932C3FD11E69CBEC0005785D /* DoublyLinkedLists */,
 				934BDEEC1E54B2A7006B2956 /* Typed Data Sample */,
+				93E28BFF1E8E9F4A009FE000 /* CrimeData.cpp */,
+				93E28C001E8E9F4A009FE000 /* CrimeData.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 			files = (
 				9395B4291E4B7D3100728587 /* Runner.cpp in Sources */,
 				9395B42C1E4B7D9C00728587 /* StructureController.cpp in Sources */,
+				93E28C011E8E9F4A009FE000 /* CrimeData.cpp in Sources */,
 				93E200511E48D5EB005EBBAC /* IntNode.cpp in Sources */,
 				932375C01E7C2CFA00E40ECE /* Meme.cpp in Sources */,
 				934BDEF21E54BAA3006B2956 /* Timer.cpp in Sources */,
