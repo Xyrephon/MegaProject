@@ -41,6 +41,9 @@
 		934BDEF11E54BAA3006B2956 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
 		937C459D1E672DA000EE14A6 /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = Model/DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		937C459E1E672EAC00EE14A6 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stack.hpp; path = Model/Stack.hpp; sourceTree = "<group>"; };
+		93954FC41E9FB7E9004685A0 /* BinarySearchTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinarySearchTreeNode.h; path = Model/BinarySearchTreeNode.h; sourceTree = "<group>"; };
+		93954FC51E9FB809004685A0 /* BinarySearchTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinarySearchTree.h; path = Model/BinarySearchTree.h; sourceTree = "<group>"; };
+		93954FC61E9FB8B5004685A0 /* Tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Tree.h; path = Model/Tree.h; sourceTree = "<group>"; };
 		9395B4251E4B725C00728587 /* IntNodeArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = IntNodeArray.cpp; path = Model/IntNodeArray.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		9395B4261E4B725C00728587 /* IntNodeArray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNodeArray.hpp; path = Model/IntNodeArray.hpp; sourceTree = "<group>"; };
 		9395B4281E4B7D3100728587 /* Runner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Runner.cpp; path = Controller/Runner.cpp; sourceTree = "<group>"; };
@@ -148,6 +151,9 @@
 				934BDEEC1E54B2A7006B2956 /* Typed Data Sample */,
 				93E28BFF1E8E9F4A009FE000 /* CrimeData.cpp */,
 				93E28C001E8E9F4A009FE000 /* CrimeData.hpp */,
+				93954FC41E9FB7E9004685A0 /* BinarySearchTreeNode.h */,
+				93954FC51E9FB809004685A0 /* BinarySearchTree.h */,
+				93954FC61E9FB8B5004685A0 /* Tree.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
