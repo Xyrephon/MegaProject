@@ -18,7 +18,7 @@ public:
     Tree();
     //Traversals
     virtual void inOrderTraversal() = 0;
-    virtual void postORderTraversal() = 0;
+    virtual void postOrderTraversal() = 0;
     virtual void preOrderTraversal() = 0;
     //Informational Methods
     virtual int getHeight() = 0;

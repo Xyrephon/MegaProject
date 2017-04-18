@@ -18,6 +18,7 @@
 #include "../Model/Stack.hpp"
 #include "../Model/Queue.hpp"
 #include "../Model/CircularList.hpp"
+#include "../Model/BinarySearchTree.h"
 #include <string>
 
 using namespace std;
@@ -33,6 +34,7 @@ private:
     Queue<int> numberQueue;
     DoubleList<int> numberDoubleList;
     
+    void testBinarySearchTreeOperations();
     void testIntArray();
     void testNodeTypes();
     void testArrayTemplate();

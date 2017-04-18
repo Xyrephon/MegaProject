@@ -9,18 +9,21 @@
 #ifndef BinarySearchTreeNode_h
 #define BinarySearchTreeNode_h
 
+#include "Node.hpp"
 
 template <class Type>
 class BinarySearchTreeNode : public Node<Type>
 {
 private:
     BinarySearchTreeNode<Type> * root;
+    BinarySearchTreeNode<Type> * leftChild;
+    BinarySearchTreeNode<Type> * rightChild;
     int calculateSize(BinarySearchTreeNode<Type> * root);
-    void inOrderTraversal(BinarySearchTreeNode<Type> * inStart);
-    void preOrderTraversal(BinarySeachTreeNode<Type> * postStart);
     
 public:
+    ~BinarySearchTreeNode();
     BinarySearchTreeNode();
+    BinarySearchTreeNode(Type data);
     
     BinarySearchTreeNode<Type> * getRootPointer();
     BinarySearchTreeNode<Type> * getLeftChild();
@@ -42,7 +45,7 @@ BinarySearchTreeNode<Type> :: ~BinarySearchTreeNode()
 }
 
 template <class Type>
-BinarySearchTreeNode :: BinarySearchTreeNode() : Node<Type>()
+BinarySearchTreeNode<Type> :: BinarySearchTreeNode() : Node<Type>()
 {
     this->root = nullptr;
     this->rightChild = nullptr;
@@ -58,7 +61,7 @@ BinarySearchTreeNode<Type> :: BinarySearchTreeNode(Type data) : Node<Type>(data)
 }
 
 template <class Type>
-BinarySearchTreeNode<Type> * BinarySearchTreeNOde<Type> :: getLeftChild()
+BinarySearchTreeNode<Type> * BinarySearchTreeNode<Type> :: getLeftChild()
 {
     return this->leftChild;
 }

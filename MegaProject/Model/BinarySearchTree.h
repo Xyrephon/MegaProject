@@ -9,8 +9,8 @@
 #ifndef BinarySearchTree_h
 #define BinarySearchTree_h
 
-#include "Tree.hpp"
-#include "BinarySearchTreeNode.hpp"
+#include "Tree.h"
+#include "BinarySearchTreeNode.h"
 
 template <class Type>
 class BinarySearchTree : public Tree<Type>
@@ -19,11 +19,15 @@ protected:
     BinarySearchTreeNode<Type> * root;
     
     int calculateSize(BinarySearchTreeNode<Type> *  root);
+    int calculateHeight(BinarySearchTreeNode<Type> * start);
+    bool isBalanced(BinarySearchTreeNode<Type> * root);
+    bool isComplete(BinarySearchTreeNode<Type> * root);
+    
     void inOrderTraversal(BinarySearchTreeNode<Type> * start);
     void preOrderTraversal(BinarySearchTreeNode<Type> * preStart);
     void postOrderTraversal(BinarySearchTreeNode<Type> * postStart);
     
-    void removeNode(BinarySearchTreeNode<Type> * & removeMe);
+    void removeNode(BinarySearchTreeNode<Type> * removeMe);
     
 public:
     BinarySearchTree();
@@ -31,6 +35,7 @@ public:
     
     BinarySearchTreeNode<Type> * getRoot();
     void setRoot(BinarySearchTreeNode<Type> * root);
+    
     void inOrderTraversal();
     void preOrderTraversal();
     void postOrderTraversal();
@@ -38,6 +43,11 @@ public:
     void printToFile();
     
     void demoTraversalSteps(BinarySearchTreeNode<Type>* node);
+    
+    int getSize();
+    int getHeight();
+    bool isComplete();
+    bool isBalanced();
     
     bool contains(Type value);
     void insert(Type itemToInsert);
@@ -48,6 +58,12 @@ template <class Type>
 BinarySearchTree<Type> :: BinarySearchTree() : Tree<Type>()
 {
     this->root = nullptr;
+}
+
+template <class Type>
+BinarySearchTree<Type> :: ~BinarySearchTree()
+{
+    delete root;
 }
 
 template <class Type>
@@ -78,6 +94,12 @@ template <class Type>
 void BinarySearchTree<Type> :: inOrderTraversal()
 {
     inOrderTraversal(root);
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isComplete(BinarySearchTreeNode<Type> * root)
+{
+    return false;
 }
 
 template <class Type>
@@ -145,7 +167,7 @@ void BinarySearchTree<Type> :: inOrderTraversal(BinarySearchTreeNode<Type> * inS
     if(inStart != nullptr)
     {
         inOrderTraversal(inStart->getLeftChild());
-        cout << "Node Contents: " << inStart-=>getNodeData() << endl;
+        cout << "Node Contents: " << inStart->getNodeData() << endl;
         inOrderTraversal(inStart->getRightChild());
     }
 }
@@ -157,11 +179,11 @@ void BinarySearchTree<Type> :: inOrderTraversal(BinarySearchTreeNode<Type> * inS
 template <class Type>
 void BinarySearchTree<Type> :: preOrderTraversal(BinarySearchTreeNode<Type> * preStart)
 {
-    if(preStart ! = nullptr)
+    if(preStart != nullptr)
     {
         cout << "Node Contents: " << preStart->getNodeData() << endl;
         preOrderTraversal(preStart->getLeftChild());
-        preOrderTraversal(PreStart->getRightChild());
+        preOrderTraversal(preStart->getRightChild());
     }
     
 }
@@ -237,7 +259,7 @@ void BinarySearchTree<Type> :: remove(Type getRidOfMe)
 }
 
 template <class Type>
-void BinarySearchTree<Type> :: removeNode(BinarySearchTreeNode<Type> * & removeMe)
+void BinarySearchTree<Type> :: removeNode(BinarySearchTreeNode<Type> * removeMe)
 {
     BinarySearchTreeNode<Type> * current;
     BinarySearchTreeNode<Type> * previous;
@@ -283,7 +305,7 @@ void BinarySearchTree<Type> :: removeNode(BinarySearchTreeNode<Type> * & removeM
     
     }
     //has only right child
-    else if(removeMe->getLeftCHild() == nullptr)
+    else if(removeMe->getLeftChild() == nullptr)
     {
         temp = removeMe;
         removeMe->getLeftChild();
@@ -305,7 +327,7 @@ void BinarySearchTree<Type> :: removeNode(BinarySearchTreeNode<Type> * & removeM
         current = removeMe->getLeftChild();
         previous = nullptr;
         
-        while (current->getRightChild != nullptr)
+        while (current->getRightChild() != nullptr)
         {
             previous = current;
             current = current->getRightChild();
@@ -321,7 +343,17 @@ void BinarySearchTree<Type> :: removeNode(BinarySearchTreeNode<Type> * & removeM
         {
             previous->setRightChild(current->getLeftChild());
             current->getLeftChild()->setRootPointer(previous);
+            if(current->getLeftChild() != nullptr)
+            {
+                current->getLeftChild()->setRootPointer(previous);
+            }
         }
+        delete current;
+    }
+    
+    if(removeMe == nullptr || removeMe->getRootPointer() == nullptr)
+    {
+        setRoot(removeMe);
     }
 
 }
