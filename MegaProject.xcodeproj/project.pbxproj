@@ -49,6 +49,7 @@
 		9395B4281E4B7D3100728587 /* Runner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Runner.cpp; path = Controller/Runner.cpp; sourceTree = "<group>"; };
 		9395B42A1E4B7D9C00728587 /* StructureController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StructureController.cpp; path = Controller/StructureController.cpp; sourceTree = "<group>"; };
 		9395B42B1E4B7D9C00728587 /* StructureController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = StructureController.hpp; path = Controller/StructureController.hpp; sourceTree = "<group>"; };
+		93970C6B1EA7B1CF0036D399 /* AVLTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = AVLTree.hpp; path = Model/AVLTree.hpp; sourceTree = "<group>"; };
 		93BCC6081E647C660089566A /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = List.h; path = Model/List.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		93BCC6091E648D260089566A /* BiDirectionalNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = BiDirectionalNode.hpp; path = Model/BiDirectionalNode.hpp; sourceTree = "<group>"; };
 		93E200451E48D410005EBBAC /* MegaProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaProject; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +155,7 @@
 				93954FC41E9FB7E9004685A0 /* BinarySearchTreeNode.h */,
 				93954FC51E9FB809004685A0 /* BinarySearchTree.h */,
 				93954FC61E9FB8B5004685A0 /* Tree.h */,
+				93970C6B1EA7B1CF0036D399 /* AVLTree.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
