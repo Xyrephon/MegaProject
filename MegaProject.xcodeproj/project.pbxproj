@@ -141,23 +141,31 @@
 		93E200521E48D60E005EBBAC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				93E28BFF1E8E9F4A009FE000 /* CrimeData.cpp */,
 				932375BE1E7C2CFA00E40ECE /* Meme.cpp */,
 				934BDEF01E54BAA3006B2956 /* Timer.cpp */,
 				93BCC6081E647C660089566A /* List.h */,
 				934BDEE81E54AAAA006B2956 /* Array.hpp */,
+				93E28C001E8E9F4A009FE000 /* CrimeData.hpp */,
 				932375BF1E7C2CFA00E40ECE /* Meme.hpp */,
 				93063A841E520902000F8103 /* Node.hpp */,
 				934BDEF11E54BAA3006B2956 /* Timer.hpp */,
 				932C3FD11E69CBEC0005785D /* DoublyLinkedLists */,
+				93E79DD11EAA586800D80800 /* Tree */,
 				934BDEEC1E54B2A7006B2956 /* Typed Data Sample */,
-				93E28BFF1E8E9F4A009FE000 /* CrimeData.cpp */,
-				93E28C001E8E9F4A009FE000 /* CrimeData.hpp */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		93E79DD11EAA586800D80800 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
 				93954FC41E9FB7E9004685A0 /* BinarySearchTreeNode.h */,
 				93954FC51E9FB809004685A0 /* BinarySearchTree.h */,
 				93954FC61E9FB8B5004685A0 /* Tree.h */,
 				93970C6B1EA7B1CF0036D399 /* AVLTree.hpp */,
 			);
-			name = Model;
+			name = Tree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -575,4 +575,34 @@ bg=green</panel_attributes>
 + remove(Type) : void</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1310</x>
+      <y>235</y>
+      <w>335</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>Model :: AVLTree&lt;Type&gt;
+-
+# root : BinarySearchTreeNode&lt;Type&gt; * (inherited)
+-
+*AVLRotations*
+- leftRotation(BinarySearchTreeNode&lt;Type&gt; * parent): BinarySearchTreeNode&lt;Type&gt; *
+- rightRotation(BinarySearchTreeNode&lt;Type&gt; * first): BinarySearchTreeNode&lt;Type&gt; *
+- leftRightRotation(BinarySearchTreeNode&lt;Type&gt; * first) : BinarySearchTreeNode&lt;Type&gt; *
+- rightLeftRotation(BinarySearchTreeNode&lt;Type&gt; * first): BinarySearchTreeNode&lt;Type&gt; *
+
+*Helper Methods*
+- insertNode(BinarySearchTreeNode&lt;Type&gt; *, Type value) : BinarySearchTreeNode&lt;Type&gt; *
+- removeNode(BinarySearchTreeNode&lt;Type&gt; *, Type value) : BinarySearchTreeNode&lt;Type&gt; *
+ - balanceSubTree(BinarySearchTreeNode&lt;Type&gt; *) : BinarySearchTreeNode&lt;Type&gt; *
+ - heightDifference(BinarySearchTreeNode&lt;Type&gt; * parent) : int
+
+*Data Operations*
++ insert(Type) : void
++ remove(Type) : void
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
