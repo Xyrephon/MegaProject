@@ -28,10 +28,10 @@ StructureController :: StructureController()
 
 void StructureController :: start()
 {
-    testLists();
-    testStacks();
-    testQueues();
-    testDoubleList();
+//    testLists();
+//    testStacks();
+//    testQueues();
+//    testDoubleList();
     testBinarySearchTreeOperations();
 }
 
