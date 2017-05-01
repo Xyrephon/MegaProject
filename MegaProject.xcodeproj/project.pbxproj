@@ -36,6 +36,8 @@
 		932C3FCE1E69C9CE0005785D /* DoubleList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DoubleList.hpp; path = Model/DoubleList.hpp; sourceTree = "<group>"; };
 		932C3FCF1E69C9ED0005785D /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CircularList.hpp; path = Model/CircularList.hpp; sourceTree = "<group>"; };
 		932C3FD01E69C9FC0005785D /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Queue.hpp; path = Model/Queue.hpp; sourceTree = "<group>"; };
+		934AA66E1EB77A6500561964 /* HashTable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HashTable.hpp; path = Model/HashTable.hpp; sourceTree = "<group>"; };
+		934AA66F1EB784B900561964 /* HashNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HashNode.hpp; path = Model/HashNode.hpp; sourceTree = "<group>"; };
 		934BDEE81E54AAAA006B2956 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; lineEnding = 0; name = Array.hpp; path = Model/Array.hpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		934BDEF01E54BAA3006B2956 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Model/Timer.cpp; sourceTree = "<group>"; };
 		934BDEF11E54BAA3006B2956 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
@@ -153,6 +155,8 @@
 				932C3FD11E69CBEC0005785D /* DoublyLinkedLists */,
 				93E79DD11EAA586800D80800 /* Tree */,
 				934BDEEC1E54B2A7006B2956 /* Typed Data Sample */,
+				934AA66E1EB77A6500561964 /* HashTable.hpp */,
+				934AA66F1EB784B900561964 /* HashNode.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
