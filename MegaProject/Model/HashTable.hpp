@@ -24,8 +24,8 @@ private:
     bool isPrime(long sampleNumber);
     void resize();
     long nextPrime(long current);
-    long findPosition(Type data);
-    long handleCollision(Type data, long currentPosition);
+    long findPosition(HashNode<Type> * data);
+    long handleCollision(HashNode<Type> * data, long currentPosition);
 public:
     HashTable();
     ~HashTable();
@@ -90,7 +90,32 @@ bool HashTable<Type> :: isPrime(long candidateNumber)
     }
 }
 
+template <class Type>
+long HashTable<Tupe> :: findPosition(HashNode<Type> * data)
+{
+    long insertPosition = data->getKey() % this->capacity;
+    return insertPosition;
+}
 
-
-
+template <class Type>
+long HashTable<Type> :: handlCollision(HashNode<Type> * data, long currentPosiiton)
+{
+    long shift = 17;
+    
+    for (long position = currentPosition + shift; position != currentPosition; position += shift)
+    {
+        if(position > capacity)
+        {
+            position = position % capacity
+        }
+        
+        if(hashTableStorage[Position] == nullptr)
+        {
+            return position;
+        }
+        
+    }
+    
+    return -1;
+}
 #endif /* HashTable_h */
