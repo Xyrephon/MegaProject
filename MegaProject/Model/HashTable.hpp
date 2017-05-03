@@ -124,14 +124,14 @@ bool HashTable<Type> :: remove(Type data)
 {
     bool removed = false;
     
-//    for (long index = 0; index < capacity; index++)
-//    {
-//        if(hashTableStorage[index] != nullptr && hashTableStorage[index]->getData() == data)
-//        {
-//            hashTableStorage[index] = nullptr;
-//            remove = true;
-//        }
-//    }
+    //    for (long index = 0; index < capacity; index++)
+    //    {
+    //        if(hashTableStorage[index] != nullptr && hashTableStorage[index]->getData() == data)
+    //        {
+    //            hashTableStorage[index] = nullptr;
+    //            remove = true;
+    //        }
+    //    }
     
     HashNode<Type> * find(data);
     long hashIndex = findPosition(find);
@@ -183,16 +183,37 @@ void HashTable<Type> :: resize()
             else
             {
                 long updatedPosition = handleCollision(temp, position)
-                while (tempStorage[updatedPosition] != nulltpr)
-                {
-                    updatedPosition = handleCollision(temp, updatedPosition);
-                }
                 tempStorage[updatedPosition] = temp;
             }
         }
     }
     
     hashTableStorage = tempStorage;
+}
+
+template <class Type>
+void HashTable<Type> :: add(Type data)
+{
+    this->size++;
+    if(((this->size * 1.000) / this->capacity) > this->efficiencyPercentage)
+    {
+        resize();
+    }
+    
+    HashNode<Type> * temp = new HashNode<Type>(data);
+    long index = findPosition(temp);
+    
+    if(hashTableStorage[index] == nullptr)
+    {
+        tempStorage[index] = temp;
+    }
+    else
+    {
+        long updatedPosition = handleCollision(temp, index)
+        tempStorage[updatedPosition] = temp;
+    }
+}
+
 }
 
 
