@@ -205,12 +205,12 @@ void HashTable<Type> :: add(Type data)
     
     if(hashTableStorage[index] == nullptr)
     {
-        tempStorage[index] = temp;
+        hashTableStorage[index] = temp;
     }
     else
     {
         long updatedPosition = handleCollision(temp, index)
-        tempStorage[updatedPosition] = temp;
+        hashTableStorage[updatedPosition] = temp;
     }
 }
 
