@@ -43,6 +43,7 @@
 		934BDEF11E54BAA3006B2956 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
 		937C459D1E672DA000EE14A6 /* DoublyLinkedList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DoublyLinkedList.hpp; path = Model/DoublyLinkedList.hpp; sourceTree = "<group>"; };
 		937C459E1E672EAC00EE14A6 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Stack.hpp; path = Model/Stack.hpp; sourceTree = "<group>"; };
+		938E68141EC1FCDC00C32238 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Graph.hpp; path = Model/Graph.hpp; sourceTree = "<group>"; };
 		93954FC41E9FB7E9004685A0 /* BinarySearchTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinarySearchTreeNode.h; path = Model/BinarySearchTreeNode.h; sourceTree = "<group>"; };
 		93954FC51E9FB809004685A0 /* BinarySearchTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinarySearchTree.h; path = Model/BinarySearchTree.h; sourceTree = "<group>"; };
 		93954FC61E9FB8B5004685A0 /* Tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Tree.h; path = Model/Tree.h; sourceTree = "<group>"; };
@@ -157,6 +158,7 @@
 				934BDEEC1E54B2A7006B2956 /* Typed Data Sample */,
 				934AA66E1EB77A6500561964 /* HashTable.hpp */,
 				934AA66F1EB784B900561964 /* HashNode.hpp */,
+				938E68141EC1FCDC00C32238 /* Graph.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";

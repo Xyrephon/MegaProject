@@ -605,4 +605,34 @@ bg=green</panel_attributes>
  </panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1320</x>
+      <y>65</y>
+      <w>280</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Mode :: Graph
+-
+- static const int MAXIMUM
+- adjacencyMatrix [MAXIUM][MAXIMUM] : bool
+- graphData[MAXIMUM] : Type
+- vertexCount : int
+-
+- depthFirstTraversal(Graph&lt;Type&gt; graph, int vertex, bool markedVertices[]) : void
++ Graph() 
++ ~Graph()
++ addVertex(const Type&amp; value) : void
++ addEdge(int source, int target) : void
++ removeEdge(int source, int target) : void
++ Type&amp; operator [] (int vertex)
++ Type operator [] (int vertex) const
++ size() const : int
++ areConnected(int source, int target) const : bool
++ neighbors (int vertex) const : std::set&lt;int&gt;
++ depthFirstTraversal(Graph&lt;Type&gt; graph, int vertex) : void
++ breadthFirstTraversal(Graph&lt;Type&gt; graph, int vertex) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
