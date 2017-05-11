@@ -20,8 +20,8 @@ class Graph
 private:
     static const int MAXIMUM = 20;
     bool adjacencyMatrix [MAXIMUM][MAXIMUM];
-    type graphData[MAXIMUM];
-    int vertextCount;
+    Type graphData[MAXIMUM];
+    int vertexCount;
     void depthFirstTraversal(Graph<Type> graph, int vertex, bool markedVertices[]);
 public:
     Graph();
@@ -52,8 +52,8 @@ Graph<Type> :: Graph()
 template <class Type>
 Graph<Type> :: ~Graph()
 {
-    delete [] this->adjacencyMatrix;
-    delete [] this->graphData;
+//    delete [] this->adjacencyMatrix;
+//    delete [] this->graphData;
 }
 
 template <class Type>
@@ -67,7 +67,7 @@ void Graph<Type> :: addVertex(const Type& value)
 {
     assert(size() < MAXIMUM);
     int newVertexNumber = vertexCount;
-    vertexCount++
+    vertexCount++;
     
     for(int otherVertexNumber = 0; otherVertexNumber < vertexCount; otherVertexNumber++)
     {
@@ -75,11 +75,11 @@ void Graph<Type> :: addVertex(const Type& value)
         adjacencyMatrix[newVertexNumber] [otherVertexNumber] = false;
     }
     
-    graphData[NewVertexNumber] = value;
+    graphData[newVertexNumber] = value;
 }
 
 template <class Type>
-bool Graph<Type> :: areConnnected(int source, int target) const
+bool Graph<Type> :: areConnected(int source, int target) const
 {
     assert(source < size() && target < size());
     
@@ -109,7 +109,7 @@ std::set<int> Graph<Type> :: neighbors(int vertex) const
     assert(vertex < size());
     std::set<int> vertexNeighbors;
     
-    for(int index = 0; idnex < size(); index++)
+    for(int index = 0; index < size(); index++)
     {
         if(adjacencyMatrix[vertex][index])
         {
@@ -190,5 +190,4 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> currentGraph, int vertex)
     }
 }
 
-
-#endif /* Graph_h */
+#endif /* Graph_hpp */

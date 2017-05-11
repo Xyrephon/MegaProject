@@ -9,6 +9,7 @@
 #include "StructureController.hpp"
 #include "../Model/Timer.hpp"
 #include "../Model/List.h"
+#include "../Model/Graph.hpp"
 #include <iostream>
 
 using namespace std;
@@ -22,6 +23,7 @@ StructureController :: StructureController()
     numberStack = Stack<int>();
     numberQueue = Queue<int>();
     numberDoubleList = DoubleList<int>();
+    stringGraph = Graph<string>();
     
 }
 
@@ -32,7 +34,33 @@ void StructureController :: start()
 //    testStacks();
 //    testQueues();
 //    testDoubleList();
-    testBinarySearchTreeOperations();
+//    testBinarySearchTreeOperations();
+    testGraph();
+}
+
+void StructureController :: testGraph()
+{
+    cout << "Creating a graph..." << endl;
+    stringGraph.addVertex("Julie Jardine");
+    stringGraph.addVertex("Dennis Tucker");
+    stringGraph.addVertex("Jonah Tucker");
+    stringGraph.addVertex("Nathan Jardine");
+    stringGraph.addVertex("Gideon Jardine");
+    
+    stringGraph.addEdge(0,2);
+    stringGraph.addEdge(1,2);
+    stringGraph.addEdge(2,0);
+    stringGraph.addEdge(2,1);
+    stringGraph.addEdge(0,3);
+    stringGraph.addEdge(3,4);
+    stringGraph.addEdge(4,3);
+    
+    cout << "Depth First Traversal: " << endl;
+    stringGraph.depthFirstTraversal(stringGraph, 0);
+    
+    cout << "Breadth First Traversal: " << endl;
+    stringGraph.breadthFirstTraversal(stringGraph, 0);
+    
 }
 
 void StructureController :: testLists()

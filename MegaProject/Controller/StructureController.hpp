@@ -19,6 +19,7 @@
 #include "../Model/Queue.hpp"
 #include "../Model/CircularList.hpp"
 #include "../Model/BinarySearchTree.h"
+#include "../Model/Graph.hpp"
 #include <string>
 
 using namespace std;
@@ -33,6 +34,7 @@ private:
     Stack<int> numberStack;
     Queue<int> numberQueue;
     DoubleList<int> numberDoubleList;
+    Graph<string> stringGraph;
     
     void testBinarySearchTreeOperations();
     void testIntArray();
@@ -45,6 +47,7 @@ private:
     void testStacks();
     void testQueues();
     void testDoubleList();
+    void testGraph();
 public:
     StructureController();
     void start();
