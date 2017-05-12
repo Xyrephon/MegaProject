@@ -38,7 +38,7 @@ HashNode<Type> :: HashNode(Type data)
 }
 
 template <class Type>
-logn HashNode<Type> :: getKey() const
+long HashNode<Type> :: getKey() const
 {
     return this->key;
 }

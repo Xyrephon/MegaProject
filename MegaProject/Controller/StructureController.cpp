@@ -10,6 +10,7 @@
 #include "../Model/Timer.hpp"
 #include "../Model/List.h"
 #include "../Model/Graph.hpp"
+#include "../Model/HashTable.hpp"
 #include <iostream>
 
 using namespace std;
@@ -24,6 +25,7 @@ StructureController :: StructureController()
     numberQueue = Queue<int>();
     numberDoubleList = DoubleList<int>();
     stringGraph = Graph<string>();
+    intHash = HashTable<int>();
     
 }
 
@@ -35,7 +37,26 @@ void StructureController :: start()
 //    testQueues();
 //    testDoubleList();
 //    testBinarySearchTreeOperations();
-    testGraph();
+//    testGraph();
+    testHashTable();
+}
+
+void StructureController :: testHashTable()
+{
+    cout << "Creating a HashTable..." << endl;
+    HashTable<int> derp;
+    derp.add(1);
+    derp.add(20);
+    derp.add(30);
+    derp.add(24);
+    derp.add(12);
+    derp.add(17);
+    derp.add(19);
+    derp.add(42);
+    derp.add(50);
+    derp.add(72);
+    cout << "HashTable: " << endl;
+    derp.displayContents();
 }
 
 void StructureController :: testGraph()

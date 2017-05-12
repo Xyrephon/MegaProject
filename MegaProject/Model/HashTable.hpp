@@ -6,8 +6,8 @@
 //  Copyright © 2017 Tucker, Jonah. All rights reserved.
 //
 
-#ifndef HashTable_h
-#define HashTable_h
+#ifndef HashTable_hpp
+#define HashTable_hpp
 
 #include <cmath>
 #include <assert.h>
@@ -20,10 +20,10 @@ private:
     long capacity;
     long size;
     double efficiencyPercentage;
-    HashNoe<Type> * * hashTableStorage;
+    HashNode<Type> * * hashTableStorage;
     bool isPrime(long sampleNumber);
     void resize();
-    long nextPrime(long current);
+    long nextPrime();
     long findPosition(HashNode<Type> * data);
     long handleCollision(HashNode<Type> * data, long currentPosition);
 public:
@@ -47,7 +47,7 @@ HashTable<Type> :: HashTable()
     this->capacity = 101;
     this->efficiencyPercentage = .667;
     this->size = 0;
-    this->hashTableStorage = HashNode<Type> * [capacity];
+    this->hashTableStorage = new HashNode<Type> * [capacity];
     std :: fill_n(hashTableStorage, capacity, nullptr);
 }
 
@@ -85,11 +85,11 @@ bool HashTable<Type> :: isPrime(long candidateNumber)
     {
         return false;
     }
-    else if(candidateNumber % next = 0)
+    else
     {
         for(int next = 3; next <= sqrt(candidateNumber) + 1; next += 2)
         {
-            if(candidateNumber % next = 0)
+            if(candidateNumber % next == 0)
             {
                 return false;
             }
@@ -106,7 +106,7 @@ long HashTable<Type> :: findPosition(HashNode<Type> * data)
 }
 
 template <class Type>
-long HashTable<Type> :: handleCollision(HashNode<Type> * data, long currentPosiiton)
+long HashTable<Type> :: handleCollision(HashNode<Type> * data, long currentPosition)
 {
     long shift = 17;
     
@@ -114,10 +114,10 @@ long HashTable<Type> :: handleCollision(HashNode<Type> * data, long currentPosii
     {
         if(position > capacity)
         {
-            position = position % capacity
+            position = position % capacity;
         }
         
-        if(hashTableStorage[Position] == nullptr)
+        if(hashTableStorage[position] == nullptr)
         {
             return position;
         }
@@ -146,7 +146,7 @@ bool HashTable<Type> :: remove(Type data)
     if(hashTableStorage[hashIndex] != nullptr)
     {
         hashTableStorage[hashIndex] = nullptr;
-        remoed = true;
+        removed = true;
     }
     
     this->size--;
@@ -161,7 +161,7 @@ void HashTable<Type> :: displayContents()
     {
         if(hashTableStorage[index] != nullptr)
         {
-            count << index << ": " << hashTableStorage[index]->getData() << endl;
+            cout << index << ": " << hashTableStorage[index]->getData() << endl;
         }
     }
 }
@@ -169,13 +169,13 @@ void HashTable<Type> :: displayContents()
 template <class Type>
 void HashTable<Type> :: resize()
 {
-    long updatededCapacity = nextPrime();
+    long updatedCapacity = nextPrime();
     HashNode<Type> * * tempStorage = new HashNode<Type> * [updatedCapacity];
     
     std :: fill_n(tempStorage, updatedCapacity, nullptr);
     
-    long oldCapacity = this->capacity
-    this->capacity = updatededCapacity;
+    long oldCapacity = this->capacity;
+    this->capacity = updatedCapacity;
     
     for (long index = 0; index < oldCapacity; index++)
     {
@@ -190,7 +190,7 @@ void HashTable<Type> :: resize()
             }
             else
             {
-                long updatedPosition = handleCollision(temp, position)
+                long updatedPosition = handleCollision(temp, position);
                 tempStorage[updatedPosition] = temp;
             }
         }
@@ -217,12 +217,12 @@ void HashTable<Type> :: add(Type data)
     }
     else
     {
-        long updatedPosition = handleCollision(temp, index)
+        long updatedPosition = handleCollision(temp, index);
         hashTableStorage[updatedPosition] = temp;
     }
 }
 
-}
+
 
 
 #endif /* HashTable_h */
