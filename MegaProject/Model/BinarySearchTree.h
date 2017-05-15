@@ -437,7 +437,7 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
             }
             else //Remove cerr after verfication of understanding
             {
-                cerr << "Item exists alread - Exitiing" << endl;
+                cerr << "Item exists alread - Exiting" << endl;
                 delete insertMe;
                 return;
             }
