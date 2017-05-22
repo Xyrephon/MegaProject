@@ -22,6 +22,8 @@
 #include "../Model/Graph.hpp"
 #include "../Model/HashNode.hpp"
 #include "../Model/HashTable.hpp"
+#include "../Model/BinarySearchTreeNode.h"
+#include "../Model/BinarySearchTree.h"
 #include <string>
 
 using namespace std;
@@ -38,6 +40,8 @@ private:
     DoubleList<int> numberDoubleList;
     Graph<string> stringGraph;
     HashTable<int> intHash;
+    BinarySearchTree<int> intTree;
+    
     
     void testBinarySearchTreeOperations();
     void testIntArray();
@@ -52,6 +56,7 @@ private:
     void testDoubleList();
     void testGraph();
     void testHashTable();
+    void testTree();
 public:
     StructureController();
     void start();

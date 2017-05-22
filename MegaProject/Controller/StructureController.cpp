@@ -26,7 +26,6 @@ StructureController :: StructureController()
     numberDoubleList = DoubleList<int>();
     stringGraph = Graph<string>();
     intHash = HashTable<int>();
-    
 }
 
 
@@ -38,7 +37,36 @@ void StructureController :: start()
 //    testDoubleList();
 //    testBinarySearchTreeOperations();
 //    testGraph();
-    testHashTable();
+//    testHashTable();
+    testTree();
+}
+
+void StructureController :: testTree()
+{
+    cout << "Creating a Tree..." << endl;
+    BinarySearchTree<int> intTree;
+    intTree.insert(6);
+    intTree.insert(12);
+    cout << "Tree size: " << intTree.getSize() << endl;
+    intTree.insert(3);
+    intTree.insert(5);
+    intTree.insert(4);
+    cout << "Tree size: " << intTree.getSize() << endl;
+    intTree.insert(10);
+    intTree.insert(2);
+    intTree.insert(9);
+    intTree.remove(4);
+    intTree.insert(4);
+    cout << "Tree size: " << intTree.getSize() << endl;
+    cout << "In-Order Traversal: " << endl;
+    intTree.inOrderTraversal();
+    cout << "Pre-Order Traversal: " << endl;
+    intTree.preOrderTraversal();
+    cout << "Post-Order Traversal: " << endl;
+    intTree.postOrderTraversal();
+    
+    
+    
 }
 
 void StructureController :: testHashTable()

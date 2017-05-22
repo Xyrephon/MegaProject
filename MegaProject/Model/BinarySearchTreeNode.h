@@ -79,9 +79,9 @@ BinarySearchTreeNode<Type> * BinarySearchTreeNode<Type> :: getRootPointer()
 }
 
 template <class Type>
-void BinarySearchTreeNode<Type> :: setRootPointer(BinarySearchTreeNode<Type> * right)
+void BinarySearchTreeNode<Type> :: setRootPointer(BinarySearchTreeNode<Type> * root)
 {
-    this->leftChild = right;
+    this->root = root;
 }
 
 template <class Type>

@@ -326,13 +326,13 @@ void BinarySearchTree<Type> :: removeNode(BinarySearchTreeNode<Type> * removeMe)
         temp = removeMe;
         removeMe = nullptr;
         
-        if(previous != nullptr && removeMe->getNodeData() < previous ->getNodeData())
+        if(previous != nullptr && temp->getNodeData() < previous->getNodeData())
         {
-            previous->setLeftChild(removeMe);
+            previous->setLeftChild(temp);
         }
-        else if(previous != nullptr && removeMe->getNodeData() > previous->getNodeData())
+        else if(previous != nullptr && temp->getNodeData() > previous->getNodeData())
         {
-            previous->setRightChild(removeMe);
+            previous->setRightChild(temp);
         }
         
         delete temp;
